@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import check from './icon.webp';
 
 export class GroceryList extends Component {
     state = {
@@ -53,7 +52,6 @@ export class GroceryList extends Component {
             <ul>
                 {this.state.groceryList.map((item, index) => (
                     <li onClick={this.crossedWord} key={index} alt="check-box">
-                    <img src={check} width="40px" />
                     {item}</li>
                 ))}
                 <li></li>
